@@ -1,0 +1,125 @@
+% !TEX encode = UTF-8
+% !TEX program = xelatex
+
+\PassOptionsToPackage{quiet}{xeCJK}
+% ==========================
+% - 试卷: \documentclass[answer]{NPUExam}
+% - 答案：\documentclass[]{NPUExam}
+% ===========================
+
+\documentclass[answer]{NPUExam}
+%\documentclass[]{NPUExam}
+
+\usepackage{HTNotes-math}
+\usepackage{pifont}
+
+\usepackage{tikz}
+\usetikzlibrary{positioning, calc, shapes.geometric, shapes, shapes.multipart, arrows.meta, arrows, decorations.markings, external, trees}
+
+% =================================================
+%       PDF信息
+% =================================================
+% PDF信息里的标题栏
+\title{西北工业大学研究生院
+学位研究生课程考试试题}
+% PDF信息里的作者栏
+\author{NPU}
+% PDF信息里的主题
+\Subject{Exam}
+% PDF信息里的关键词
+\Keywords{Mathematical Statistics}
+
+% =================================================
+%       试卷头信息
+% =================================================
+% 试卷头里的年份
+\Year{2022--2023}
+% 试卷头里的学期
+\Semester{秋季}
+% 试卷头里的课程
+\Course{数理统计}
+% 课程编号
+\Coursenum{M11G10000}
+% 考试时间
+\Time{2023年11月23日18:00-20:30}
+% 试卷头里的类型，如A/B/模拟等
+\Type{A}
+
+\newcommand\alert{\vspace{0.5em}\noindent\textcolor{red}} 
+\begin{document}
+\vspace{1cm}
+% 生成试卷表头
+\makehead
+
+\vspace{1cm}
+
+\makepart{选择题}{每题2分，共4分}
+
+\begin{problem}
+设$X_1,X_2,\cdots,X_n \sim N(\mu,\sigma^2)$, 则\pickout{A}
+\options
+{$E(X)= \mu$}
+{$E(X)= 0$}
+{$E(X)= \mu^2$}
+{$E(X)= \sqrt{\mu}$}
+\end{problem}
+
+\begin{problem}
+设$X_1,X_2,\cdots,X_n \sim N(\mu,\sigma^2)$, 则\pickout{A}
+\options
+{$E(X)= \mu$}
+{$E(X)= 0$}
+{$E(X)= \mu^2$}
+{$E(X)= \sqrt{\mu}$}
+\end{problem}
+
+
+\makepart{填空题}{每空2分，共4分}
+
+\begin{problem}
+If $X_1,X_2,\cdots,X_n \sim N(\mu,\sigma^2)$, $\overline{X}\sim$\fillin{$N(\mu,\sigma^2)$}.
+\end{problem}
+
+\begin{problem}
+If $X_1,X_2,\cdots,X_n \sim N(\mu,\sigma^2)$, $\overline{X}\sim$\fillin{$N(\mu,\sigma^2)$}.
+\end{problem}
+
+\makepart{判断题}{每个2分，共4分}
+
+\begin{problem}
+设$X_1,X_2,\cdots,X_n \sim N(\mu,\sigma^2)$, 则$E(X)= \mu$ \pickout{\cmark}
+\end{problem}
+
+\begin{problem}
+设$X_1,X_2,\cdots,X_n \sim N(\mu,\sigma^2)$, 则$E(X)= \mu^2$ \pickout{\xmark}
+\end{problem}
+
+\makepartt{10 分} 如果$(X_1,X_2,\cdots,X_n)\sim N(\mu, \sigma^2)$，求$E(X)$
+
+\begin{solution}
+$$E(X) = \mu$$
+\end{solution}
+
+\makepartt{10分} Let $X \sim F(9,12)$. 试求：
+\begin{itemize}
+    \item[(a)] $P(X \leq 3.87)$
+    \item[(b)]  $P(X \leq 0.196)$
+\end{itemize}
+
+\begin{solution}
+
+\alert{(a)}
+
+$X \sim F(9, 12)$, thus
+
+$$P(X\leq 3.87)=0.9838$$
+
+\alert{(a)}
+$$P(X\leq 0.196)=0.01006$$
+
+\begin{note}
+ 每问5分
+\end{note}
+\end{solution}
+\bigskip
+\end{document}
